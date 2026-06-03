@@ -7,8 +7,8 @@ Approach:
 2. Left shift the elements in the actual array
 3. Place the first d elements from the temp array at the last 
 
-Time Complexity: O(n+d)
-Space Complexity: O(n)
+Time Complexity: O(2n)
+Space Complexity: O(1)
 
 Date Solved: 2026-06-03
 */
