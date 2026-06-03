@@ -7,7 +7,7 @@ Approach:
 2. Keep dividing each array until you get singular elements 
 3. Merge the singular elements to get sorted arrays at each step
 
-Time Complexity: O(2^n)
+Time Complexity: O(n log n)
 Space Complexity: O(1)
 
 Date Solved: 2026-06-03
