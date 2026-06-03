@@ -16,19 +16,20 @@ Date Solved: 2026-06-03
 #include <iostream>
 #include <vector>
 using namespace std;
-
+void reverse(int arr[], int start, int end){
+    while (start<=end){
+        int temp= arr[start];
+        arr[start]=arr[end];
+        arr[end]= temp;
+        start++;
+        end--;
+    }
+}
 void left_rotate(int arr[], int n, int d){
     d=d%n;
-    int temp[d];
-    for (int i=0; i<d; i++){
-        temp[i]= arr[i];
-    }
-    for (int i=d; i<n; i++){
-        arr[i-d]= arr[i];
-    }
-    for (int i= n-d; i<n; i++){
-        arr[i]= temp[i-(n-d)];
-    }
+    reverse(arr, 0, d);
+    reverse (arr, d+1, n-1);
+    reverse (arr, 0, n-1);
 }
 
 int main(){
