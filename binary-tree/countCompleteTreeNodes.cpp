@@ -5,7 +5,7 @@ Difficulty: Medium
 
 Approach:
 1. For a complete Binary Tree, all the levels except possibly the last level, are completely filled and in the last level, all the nodes are to the left.
-2. At each level, check if the left and right height are equal, if yes, use the formual for height, else check for the left and the right subtree recursively.
+2. At each level, check if the left and right height are equal, if yes, use the formula for height, else check for the left and the right subtree recursively.
 
 Time Complexity: O((log n)^2)
 Space Complexity: O(1)
