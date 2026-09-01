@@ -4,7 +4,7 @@ Platform: LeetCode #94
 Difficulty: Easy
 
 Approach:
-1. Use the recursive function yto first call the right child, push the current val in the answer array and then call for left child.
+1. Use the recursive function to first call the right child, push the current val in the answer array and then call for left child.
 
 Time Complexity: O(n)
 Space Complexity: O(1)
